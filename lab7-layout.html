@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Haven Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4eadf;
+            color: #3b2415;
+            display: grid;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+        }
+
+        header {
+            grid-area: header;
+            background-color: #5c3317;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #8b5a2b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .coffee-item {
+            background-color: white;
+            border: 2px solid #5c3317;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #5c3317;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Java Haven</h1>
+        <p>Your neighborhood coffee spot</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Featured Coffees</h2>
+
+        <div class="flex-container">
+            <div class="coffee-item">
+                <h3>Latte</h3>
+                <p>Smooth coffee with steamed milk.</p>
+            </div>
+
+            <div class="coffee-item">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with foam.</p>
+            </div>
+
+            <div class="coffee-item">
+                <h3>Americano</h3>
+                <p>Espresso mixed with hot water.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Java Haven. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
